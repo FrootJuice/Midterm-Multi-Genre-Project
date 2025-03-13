@@ -1,0 +1,12 @@
+body {
+    background: linear-gradient(270deg, transparent 15px, #00d9ff 15px, #00d9ff 30px, transparent 30px) repeat-y,
+                linear-gradient(-270deg, transparent 15px, #00d9ff 15px, #00d9ff 30px, transparent 30px) repeat-y;
+    background-size: 30px 60px;
+    background-position: left, right;
+}
+h2 {
+    font-family: Cursive;
+    font-size: 32px; /* Adjust the size as needed */
+    font-weight: bold;
+    text-align: center; /* Centers the text */
+}
