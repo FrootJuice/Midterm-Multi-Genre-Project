@@ -51,7 +51,7 @@ header {
 .container {
     width: 80%;
     margin: auto;
-    background: rgb(253, 198, 241)
+    background: rgb(253, 198, 241);
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
