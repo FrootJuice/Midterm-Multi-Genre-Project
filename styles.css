@@ -6,9 +6,21 @@ body {
 }
 h2 {
     font-family: Cursive;
-    font-size: 32px; /* Adjust the size as needed */
+    font-size: 48px; 
     font-weight: bold;
-    text-align: center; /* Centers the text */
+    /*text-decoration: underline;*/
+    font-style: italic;
+    text-align: center; 
+    /* Work around to get underline to fully work. */
+    border-bottom: 3px solid black; /* Creates an underline */
+    display: inline-block;
+    padding-bottom: 0.1px; /* Adds spacing */
+}
+h3 {
+    font-family: Sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: left;;
 }
 .nav-button {
     text-align: center;
