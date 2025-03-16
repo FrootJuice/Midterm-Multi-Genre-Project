@@ -4,11 +4,10 @@ body {
     background-size: 30px 60px;
     background-position: left, right;
 }
-h2 {
+h4 { /* Title/Header */
     font-family: Cursive;
     font-size: 48px; 
     font-weight: bold;
-    /*text-decoration: underline;*/
     font-style: italic;
     text-align: center; 
     /* Work around to get underline to fully work. */
@@ -16,7 +15,13 @@ h2 {
     display: inline-block;
     padding-bottom: 0.1px; /* Adds spacing */
 }
-h3 {
+h2 { /* Subpage Title/Header */
+    font-family: Cursive;
+    font-size: 36px; 
+    font-weight: bold;
+    text-align: center; 
+}
+h3 { /* Body text */
     font-family: Sans-serif;
     font-size: 24px;
     font-weight: normal;
