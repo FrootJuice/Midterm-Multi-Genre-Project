@@ -77,26 +77,36 @@ header {
 /* The "Go to Subpages" Buttons */
 .button-container {
     display: flex;
-    justify-content: space-between; /* Spaces the buttons evenly */
+    flex-wrap: wrap; /* Allows buttons to wrap on small screens */
+    justify-content: center; /* Centers buttons when wrapped */
     align-items: center;
     width: 100%;
     margin-top: 20px;
+    gap: 10px; /* Adds spacing between buttons */
 }
 
 .page-button {
-    flex: 1; /* Makes all buttons equal in width */
-    padding: 15px 20px;
-    font-size: 20px;
+    flex: 1; /* Makes buttons responsive */
+    max-width: 150px; /* Prevents them from stretching too much */
+    padding: 12px 18px;
+    font-size: 18px;
     font-weight: bold;
     color: white;
     text-decoration: none;
     text-align: center;
     border-radius: 8px;
     transition: background-color 0.3s ease;
-    margin: 0 10px; /* Adds spacing between buttons */
-    border: 3px solid black;  /* Black border */
-    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5); /* Adds a subtle black shadow */
-    background-color: rgba(0, 0, 0, 0.2); /* Light black background */
+    border: 3px solid black;  
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5); 
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Ensure buttons resize properly on small screens */
+@media (max-width: 600px) {
+    .page-button {
+        flex: none; /* Allows buttons to size correctly */
+        width: 100px; /* Prevents them from taking full width */
+    }
 }
 
 /* Individual button colors */
