@@ -101,13 +101,18 @@ header {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-/* Ensure buttons resize properly on small screens */
+/* Mobile: Stack Buttons Vertically */
 @media (max-width: 600px) {
-    .page-button {
-        flex: none; /* Allows buttons to size correctly */
-        width: 100px; /* Prevents them from taking full width */
+    .button-container {
+        flex-direction: column; /* Changes to vertical layout */
+        align-items: center; /* Centers the buttons */
     }
-}
+
+    .page-button {
+        width: 100%; /* Makes buttons full width */
+        max-width: 200px; /* Limits size */
+    }
+}   
 
 /* Individual button colors */
 .essay { background-color: #00d9ff; } 
