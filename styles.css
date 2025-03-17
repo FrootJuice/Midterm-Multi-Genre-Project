@@ -38,7 +38,7 @@ h3 { /* Body text */
     font-size: 18px;
     font-weight: bold;
     color: white;
-    background-color: #007BFF;
+    background-color: #00d9ff;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
@@ -74,6 +74,42 @@ header {
     border-radius: 10px;
 }
 
+/* The "Go to Subpages" Buttons */
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Spaces the buttons evenly */
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.page-button {
+    flex: 1; /* Makes all buttons equal in width */
+    padding: 15px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    margin: 0 10px; /* Adds spacing between buttons */
+    border: 3px solid black;  /* Black border */
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5); /* Adds a subtle black shadow */
+    background-color: rgba(0, 0, 0, 0.2); /* Light black background */
+}
+
+/* Individual button colors */
+.essay { background-color: #00d9ff; } 
+.poem { background-color: #00d9ff; }  
+.artwork { background-color: #00d9ff; } 
+
+.page-button:hover {
+    opacity: 0.8;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7); /* Enhances shadow effect */
+}
+
+/* The "Back to Home" Buttons */
 .nav-button {
     text-align: center;
     margin: 20px 0;
@@ -85,14 +121,17 @@ header {
     font-size: 18px;
     font-weight: bold;
     color: white;
-    background-color: #007BFF;
+    background-color: #00d9ff;  /* ? Set to solid #00d9ff */
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    border: 3px solid black;  /* Black border */
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5); /* Subtle black shadow */
 }
 
 .nav-button a:hover {
-    background-color: #0056b3;
+    background-color: #00b8e6; /* Slightly darker shade on hover */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7); /* Stronger shadow on hover */
 }
 
 /* Poem Page */
