@@ -132,3 +132,19 @@ header {
 .download-button a:hover {
     background-color: #218838;
 }
+
+/* Artwork Page */
+.artwork-image {
+    display: flex;
+    justify-content: center; /* Centers image horizontally */
+    align-items: center;
+    text-align: center;
+    margin: 20px auto; /* Centers the div itself */
+}
+
+.artwork-image img {
+    max-width: 90%; /* Ensures image does not exceed container */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds shadow */
+}
